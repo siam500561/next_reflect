@@ -23,6 +23,11 @@ export default async function Home() {
           <FAQ />
         </div>
       </div>
+      <footer className="flex items-center justify-center px-4 py-8 md:py-16 bg-orange-50 rounded-t-2xl shadow-inner shadow-orange-500/20">
+        <p className="text-orange-900 text-sm">
+          Build with <span className="animate-pulse">❤️</span> by Siam
+        </p>
+      </footer>
     </>
   );
 }
