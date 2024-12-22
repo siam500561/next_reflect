@@ -5,7 +5,7 @@ import { journalSchema } from "@/lib/form-schema";
 import { getMoodById } from "@/lib/mood";
 import { db } from "@/lib/prisma";
 import { checkRateLimit, RateLimitError } from "@/lib/rate-limit";
-import { Entry } from "@prisma/client";
+import { Entry, User } from "@prisma/client";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { getPixabayImages } from "./public";
@@ -45,7 +45,7 @@ export const createJournal = async (
     });
 
     // Step 2: Get authenticated user
-    const user = await checkUser();
+    const user = (await checkUser()) as User;
 
     // Step 3: Check rate limiting to prevent abuse
     await checkRateLimit(
