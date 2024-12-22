@@ -10,7 +10,7 @@ import UserMenu from "./user-menu";
 export default function Header() {
   return (
     <header className="container mx-auto">
-      <nav className="px-6 py-4 flex justify-between items-center">
+      <nav className="px-6 md:px-0 py-4 flex justify-between items-center">
         <Link href="/">
           <Image
             src="/logo.png"
@@ -21,7 +21,7 @@ export default function Header() {
           />
         </Link>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
           <SignedIn>
             <Link href="/dashboard#collections">
               <Button variant="outline">
@@ -44,7 +44,7 @@ export default function Header() {
 
           <SignedOut>
             <SignInButton>
-              <Button>Log in</Button>
+              <Button variant="outline">Log in</Button>
             </SignInButton>
           </SignedOut>
         </div>

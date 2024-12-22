@@ -42,3 +42,19 @@
     @apply bg-orange-500 text-white;
   }
 }
+
+.gradient-text {
+  @apply bg-gradient-to-br from-orange-600 via-orange-500 to-orange-400/80 text-transparent bg-clip-text;
+}
+
+.ql-editor {
+  @apply h-[300px] leading-relaxed !important;
+}
+
+.ql-toolbar {
+  @apply rounded-t-sm h-[65px] md:h-[40px] !important;
+}
+
+.ql-container {
+  @apply rounded-b-sm !important;
+}

@@ -17,7 +17,7 @@ async function DailyPrompt() {
 export function Hero() {
   return (
     <div className="max-w-6xl mx-auto text-center space-y-8">
-      <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 bg-gradient-to-br from-orange-600 via-orange-500 to-orange-400 tracking-tight text-transparent bg-clip-text">
+      <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 tracking-tight gradient-text">
         Your Space to Reflect. {"\n"} Your Life to Tell.
       </h1>
 
@@ -56,7 +56,7 @@ export function Hero() {
       </div>
 
       <div className="flex gap-2 justify-center">
-        <Link href="/journal">
+        <Link href="/journal/write">
           <Button className="px-8 py-6 rounded-full">
             <span>Start Writing</span>
             <ChevronRight className="size-5" />
